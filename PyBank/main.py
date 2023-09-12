@@ -48,6 +48,8 @@ with open(path, 'r', newline='') as file:
 
     content = f"Financial Analysis\n\n----------------------------\n\nTotal Months: {len(checkForRepetitive)}\n\nTotal: ${totalValue}\n\nAverage Change: ${round(totalChange / (len(checkForRepetitive)-1), 2)}\n\nGreatest Increase in Profits: {greatestIncrease['month']} (${greatestIncrease['value']})\n\nGreatest Decrease in Profits: {greatestDecrease['month']} (${greatestDecrease['value']})"
 
+    print(content)
+    
     txt_path = "PyBank.txt"
 
     with open(txt_path, "w") as file:
